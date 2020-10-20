@@ -1,8 +1,10 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPhone, faBarcode, faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
-
+// import { facebook } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook, faTwitter, faInstagram, faLinkedin, faTelegram } from '@fortawesome/free-brands-svg-icons'
+// import { faPhone, faBarcode, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+// import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
+import './footer.css'
 
 
 class Footer extends Component {
@@ -12,13 +14,13 @@ class Footer extends Component {
     }
     render() {
         return (
-            <div>
-                {/* Footer Content */}
-                <div style={{ borderTop: '2px solid #bbb', width: '100%', margin: '0 auto' }}></div>
-                <footer style={{ marginTop: '2rem' }}>
-                    <div className='row' style={{ direction: 'rtl', margin: 0 }}>
-                        <div className='col-12 col-sm-6' style={{ height: '200px' }}>
-                            <ul style={{ listStyle: 'none', textAlign: 'right', fontSize: '1rem' }}>
+            <div style={{ marginTop:'10px'}}>
+                <div style={{ width: '85%', margin: '0 auto', border: '2px solid #DDD', borderRadius: '30px', paddingBottom:'5px' }}>
+                    {/* Footer Content */}
+                    <footer style={{ marginTop: '2rem' }}>
+                        <div className='row' style={{ direction: 'rtl', margin: 0 }}>
+                            <div className='col-12 col-lg-3' style={{}}>
+                                {/* <ul style={{ listStyle: 'none', textAlign: 'right', fontSize: '1rem' }}>
                                 <li>تماس با ما</li>
                                 <li>
                                     <span> <FontAwesomeIcon icon={faMapMarkerAlt} size="sm" /> </span>
@@ -36,35 +38,52 @@ class Footer extends Component {
                                     <span> <FontAwesomeIcon icon={faBarcode} size="sm" /> </span>
                                     <span style={{ paddingRight: '1rem' }}>کدپستی: 91677</span>
                                 </li>
-                            </ul>
-                        </div>
-                        <div className='col-12 col-sm-3' style={{ height: '200px' }}>
-                            <div className='row'>
-                                <div className='col-12'>
-                                    <ul style={{ listStyle: 'none', textAlign: 'right' }}>
-                                        <li>درباره ما</li>
-                                        <li>سوالات متداول</li>
-                                        <li>ثبت شکایات</li>
-                                    </ul>
+                            </ul> */}
+                                <h4 style={{ color: '#999', textAlign: 'right' }}>My Domain.com</h4>
+                                <ul className='ulFooterSocial' style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', direction: 'ltr', height: '100%' }}>
+                                    <li><a href='https://www.google.com/' target='_blank'><FontAwesomeIcon icon={faFacebook} size="lg" color='#b7b7b7' /></a></li>
+                                    <li><a href='https://www.google.com/' target='_blank'><FontAwesomeIcon icon={faTwitter} size="lg" color='#b7b7b7' /></a></li>
+                                    <li><a href='https://www.google.com/' target='_blank'><FontAwesomeIcon icon={faInstagram} size="lg" color='#b7b7b7' /></a></li>
+                                    <li><a href='https://www.google.com/' target='_blank'><FontAwesomeIcon icon={faLinkedin} size="lg" color='#b7b7b7' /></a></li>
+                                    <li><a href='https://www.google.com/' target='_blank'><FontAwesomeIcon icon={faTelegram} size="lg" color='#b7b7b7' /></a></li>
+                                </ul>
+                            </div>
+                            <div className='col-12 col-lg-6' style={{}}>
+                                <div className='row'>
+                                    <div className='col-6'>
+                                        <ul style={{ listStyle: 'none', textAlign: 'center', width: '100%', borderRight: '3px solid #DDD' }}>
+                                            <li>درباره ما</li>
+                                            <li>تماس با ما</li>
+                                            <li>شرایط و قوانین</li>
+                                        </ul>
+                                    </div>
+                                    <div className='col-6'>
+                                        <ul style={{ listStyle: 'none', textAlign: 'center', width: '100%', borderRight: '3px solid #DDD' }}>
+                                            <li>درباره ما</li>
+                                            <li>تماس با ما</li>
+                                            <li>شرایط و قوانین</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-12 col-lg-3' style={{}}>
+                                <div className='row'>
+                                    <div className='col-4'>
+                                        <img className='img-fluid' src={require('../../images/footer/union.png')} alt='some txt' />
+                                    </div>
+                                    <div className='col-4'>
+                                        <img className='img-fluid' src={require('../../images/footer/enamad.png')} alt='some txt' />
+                                    </div>
+                                    <div className='col-4'>
+                                        <img className='img-fluid' src={require('../../images/footer/rasaneh.png')} alt='some txt' />
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className='col-12 col-sm-3' style={{ height: '200px' }}>
-                            <div className='row'>
-                                <div className='col-4'>
-                                    <img className='img-fluid' src={require('../../images/footer/union.png')} alt='some txt'/>
-                                </div>
-                                <div className='col-4'>
-                                    <img className='img-fluid' src={require('../../images/footer/enamad.png')} alt='some txt'/>
-                                </div>
-                                <div className='col-4'>
-                                    <img className='img-fluid' src={require('../../images/footer/rasaneh.png')} alt='some txt'/>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-                <div style={{ borderTop: '2px solid #bbb', width: '80%', margin: '0 auto' }}></div>
+                    </footer>
+                    {/* <div style={{ borderTop: '2px solid #bbb', width: '80%', margin: '0 auto' }}></div> */}
+
+                </div>
                 <p style={{ textAlign: 'center', fontSize: '.8rem', marginTop: '.5rem' }}>&copy;Copyright 2020 - Tabarok Industrial Group Co.</p>
             </div>
         );

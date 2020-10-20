@@ -1,0 +1,20 @@
+.sidePanel{
+    transition: margin .5s ease-in;
+    margin: 0 0 0 -250px;
+    background-color: rgba(210, 227, 252, 0.952);
+}
+
+.sidePanel.isOpen{
+    margin-left: 0;
+}
+
+.backSidePanel{
+    opacity: 0;
+    width: 0;
+    transition: opacity .5s;
+}
+
+.backSidePanel.isOpen{
+    opacity: 1;
+    width: 100%;
+}

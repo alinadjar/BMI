@@ -1,0 +1,23 @@
+div.carousel-inner::before{
+    position: absolute;
+    left:0;
+    bottom:0;
+    z-index: 1;
+    height:0;
+    width:0;
+    content:"";
+    border-top: 65px solid transparent;
+    border-left: 50vw solid #FFF;
+}
+
+div.carousel-inner::after{
+    position: absolute;
+    right:0;
+    bottom:0;
+    z-index: 1;
+    height:0;
+    width:0;
+    content:"";
+    border-top: 65px solid transparent;
+    border-right: 50vw solid #FFF;
+}
